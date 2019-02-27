@@ -10,7 +10,7 @@ const getTheme = () => {
 const ThemeProvider = props => (
   <MuiThemeProvider theme={getTheme()}>
     <EmotionThemeProvider theme={getTheme()}>
-      {props.children}{" "}
+      {props.children}
     </EmotionThemeProvider>
   </MuiThemeProvider>
 );

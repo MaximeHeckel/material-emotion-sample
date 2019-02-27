@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { withTheme } from "emotion-theming";
 import injectSheet from "react-jss/lib/injectSheet";
 import Button from "@material-ui/core/Button";
+import { withStyles } from "@material-ui/core/styles";
 
 const EmotionButton = styled("button")`
   background: linear-gradient(45deg, #fe6b8b 30%, #ff8e53 90%);
@@ -57,4 +58,4 @@ class App extends Component {
   }
 }
 
-export default withTheme(App);
+export default withStyles(styles)(withTheme(App));
